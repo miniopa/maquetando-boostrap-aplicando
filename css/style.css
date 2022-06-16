@@ -67,6 +67,7 @@ body {
 
 .videos iframe {
     margin: 50px;
+    width: 550px;
 }
 
 .videos p {
@@ -96,11 +97,11 @@ body {
         flex-direction: column;
         align-content: center;
     }
-}
+
     .videos iframe {
         width: 300px;
     }
-
+}
     @media (max-width:375px) {
         .videos iframe {
             width: 200px;
