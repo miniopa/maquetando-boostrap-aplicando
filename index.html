@@ -12,12 +12,11 @@
 
 <body>
     <!-- NavBar Header -->
-    <header>
+    <header class="header">
         <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand h1" href="#">
-                    <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
-                        class="d-inline-block align-text-center">
+                    <img src="./img/logo.jpg" alt="" width="50" height="40" class="d-inline-block align-text-center">
                     CINECALIDAD
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -47,7 +46,7 @@
                                 Peliculas
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Estrenos</a></li>
+                                <li><a class="dropdown-item" href="./estrenos.html">Estrenos</a></li>
                                 <li><a class="dropdown-item" href="#">Peliculas</a></li>
                             </ul>
                         </li>
@@ -62,7 +61,8 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Busca Peliculas" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Busca Peliculas"
+                            aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -70,39 +70,109 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <!-- Carrousel -->
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./img/veneciafrenia.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/lupinpart2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./img/elhombredelnorte.jpg" class="d-block w-100" alt="...">
-                  </div>
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+            data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/veneciafrenia.jpg" class="d-inline w-100" alt="...">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-              <div>
-                <h1>123123123</h1>
-                <h1>123123123</h1>
-                <h1>123123123</h1>
-                <h1>123123123</h1>
-                <h1>123123123</h1>
-                <h1>123123123</h1>
-                <h1>123123123</h1>
-              </div>
+                <div class="carousel-item">
+                    <img src="./img/lupinpart2.jpg" class="d-inline w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/elhombredelnorte.jpg" class="d-inline w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section class="home-movies text-light bg-dark">
+            <div>
+                <h2 class="Title">Peliculas</h2>
+            </div>
+            <div class="Peliculas bg-dark">
+                <ul class="d-flex flex-wrap justify-content-between">
+                    <li>
+                        <a href=""><img src="./img/are-we-lost-foreve200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Are we lost forever</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/blacklight-54476-poster-205x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">BlackLight</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/deadware-58224-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Deadware</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/desesperada-54812-poster-209x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Desesperada</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/feng-bao-58602-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Feng Bao</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/flukten-over-grensen-49688-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Flukten Over</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/garra-58413-poster-202x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Garra</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/la-sombra-del-gato-58544-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">La Sombra del Gato</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/moneyboys-58590-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Moneboys</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/solo-tu-the-only-one-58598-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Solo tu The Only One</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/the-royal-game-58339-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">The Royal Game</h2>
+                    </li>
+                    <li>
+                        <a href=""></a><img src="./img/the-siege-of-robin-hood-58378-poster-202x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">The Siege of Robin Hood</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/dos-mas-dos-58228-poster-212x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Dos mas Dos</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/amundsen-27130-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Amundsen</h2>
+                    </li>
+                    <li>
+                        <a href=""><img src="./img/crush-57106-poster-200x300.jpg" alt=""></a>
+                        <h2 class="Titlemovie">Crush</h2>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="redes d-flex justify-content-evenly">
+            <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="./img/facebook.png" alt="facebook"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
