@@ -1,20 +1,41 @@
 * {
-    margin: 0;
     padding: 0;
-
+    margin: 0;
 }
 
-body {
-    overflow-x: hidden;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.8fr;
+    grid-template-areas:
+        "header header header header"
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+        "segundaSeccion segundaSeccion segundaSeccion aside"
+        "tercerSeccion tercerSeccion tercerSeccion aside"
+        "footer footer footer footer";
 }
 
-/* header */
-
-.container-fluid a img {
-    border-radius: 20px;
+.header {
+    grid-area: header;
 }
 
-/* Main index */
+/* primeraSeccion********************* */
+.primeraSeccion {
+    grid-area: primeraSeccion;
+}
+
+/* *********aside*********** */
+.aside {
+    grid-area: aside;
+    background-color: RGB(33, 37, 41);
+    color: white;
+}
+
+
+
+/* segundaSeccion********** */
+.segundaSeccion {
+    grid-area: segundaSeccion;
+}
 
 .Title {
     text-align: center;
@@ -24,6 +45,12 @@ body {
 .Peliculas ul li {
     margin: 20px;
 
+}
+
+.Peliculas ul {
+    margin-bottom: 0px !important;
+    padding-left: 0px !important;
+    list-style: none;
 }
 
 .Peliculas li img {
@@ -36,11 +63,6 @@ body {
     transform: scale(1.1);
 }
 
-.Peliculas ul {
-    margin-bottom: 0px !important;
-    padding-left: 0px !important;
-    list-style: none;
-}
 
 .Titlemovie {
     font-size: .950rem;
@@ -49,8 +71,43 @@ body {
     padding-top: 2rem;
 }
 
-/* ***index/estrenos*****/
+.sobreimg{
+    position: relative;
+    border-radius: 10px;
+}
 
+.sobreimg:hover figcaption{
+    display: block;
+    border-radius: 10px;
+}
+
+.sobreimg img{
+    transition: 2s;
+}
+
+.sobreimg img:hover{
+    transform: scale(1.0);
+    transition: 2s;
+}
+
+.sobreimg figcaption{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0 , 0 , 0 , 0.7);
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tercerseccion*********************************** */
+.tercerSeccion {
+    grid-area: tercerSeccion;
+}
+
+/* ********ESTRENOS*********** */
 .estrenos {
     background-color: RGB(33, 37, 41);
     color: white;
@@ -75,7 +132,10 @@ body {
     margin: 100px;
 }
 
-/* ****Footer*** */
+/* fooooooooteer********************* */
+.footer {
+    grid-area: footer;
+}
 
 .redes {
     background-color: #080f28;
@@ -84,26 +144,3 @@ body {
 .redes img {
     width: 60px;
 }
-
-/* MEDIAQUERY MOBILE LAST */
-@media (max-width:768px) {
-    .videos iframe {
-        width: 500px;
-    }
-}
-
-@media (max-width:425px) {
-    .Peliculas ul {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    .videos iframe {
-        width: 300px;
-    }
-}
-    @media (max-width:375px) {
-        .videos iframe {
-            width: 200px;
-        }
-    }
